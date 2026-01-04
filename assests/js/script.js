@@ -49,3 +49,13 @@ document.getElementById("year").innerHTML =
     msg.innerHTML = "Form submitted successfully!";
     return false; // page reload stop
 }
+
+function toggleMenu() {
+    let nav = document.getElementById("navLinks");
+
+    if (nav.style.display === "flex") {
+        nav.style.display = "none";
+    } else {
+        nav.style.display = "flex";
+    }
+}
