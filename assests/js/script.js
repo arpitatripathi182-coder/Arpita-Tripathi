@@ -59,6 +59,4 @@ function toggleMenu() {
         nav.style.display = "flex";
     }
 }
-<script>
-  document.getElementById("year").innerText = new Date().getFullYear();
-</script>
+
