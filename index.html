@@ -7,57 +7,31 @@
     <script src="../assests/js/script.js"></script>
 </head>
 <body>
+     <div class="container">
+        <h2>Registration Form</h2>
 
-    <!-- Navbar -->
-    <nav>
-        <h2 class="logo">MySite</h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+        <form onsubmit="return validateForm()">
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
 
-    <!-- Home -->
-    <section id="home" class="home">
-        <h1>Welcome to My Website</h1>
-        <p>HTML | CSS | JavaScript</p>
-        <button onclick="welcome()">Click Me</button>
-    </section>
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
 
-    <!-- About -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p id="aboutText">
-            I am a BCA student learning web development.
-        </p>
-        <button onclick="changeAbout()">Read More</button>
-    </section>
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Enter password">
 
-    <!-- Services -->
-    <section id="services" class="services">
-        <h2>My Services</h2>
-        <div class="cards">
-            <div class="card">HTML</div>
-            <div class="card">CSS</div>
-            <div class="card">JavaScript</div>
-        </div>
-    </section>
+            <label>Gender</label>
+            <select id="gender">
+                <option value="">Select</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
 
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <input type="text" id="name" placeholder="Enter your name">
-        <br><br>
-        <button onclick="submitForm()">Submit</button>
+            <button type="submit">Register</button>
+        </form>
+
         <p id="msg"></p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© <span id="year"></span> My Website</p>
-    </footer>
+    </div>
 
     
 </body>
